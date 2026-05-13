@@ -21,4 +21,4 @@ Action: ask user to swap in better photos, retrain.
 
 ## Slow training
 
-Default timeout is 30m. If still in progress: `higgsfield soul-id wait <id> --timeout 60m`.
+Default timeout is 30m. If still in progress: `higgsfield soul-id wait [id] --timeout 60m`.
