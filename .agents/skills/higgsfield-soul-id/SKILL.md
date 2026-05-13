@@ -48,27 +48,27 @@ Before any other command:
    Choose based on user's stated downstream use. Default to `--soul-2`.
 4. **Submit.**
    ```bash
-   higgsfield soul-id create --name "<name>" --soul-2 --image ./photo1.png --image ./photo2.png ...
-   higgsfield soul-id create --name "<name>" --soul-2 --image <upload_id> --image <upload_id> ...
+   higgsfield soul-id create --name "[name]" --soul-2 --image ./photo1.png --image ./photo2.png ...
+   higgsfield soul-id create --name "[name]" --soul-2 --image [upload_id] --image [upload_id] ...
    ```
    CLI auto-uploads paths. Captures returned reference id.
-5. **Wait.** `higgsfield soul-id wait <id>`. Silent. Default timeout 30m.
-6. **Deliver.** "Soul `<name>` ready. Use in generate with `--soul-id <id>`."
+5. **Wait.** `higgsfield soul-id wait [id]`. Silent. Default timeout 30m.
+6. **Deliver.** "Soul `[name]` ready. Use in generate with `--soul-id [id]`."
 
 ## Use the Soul
 
 Once trained, pass to `higgsfield-generate`:
 
 ```bash
-higgsfield generate create text2image_soul_v2 --prompt "..." --soul-id <ref_id> --quality 2k --wait
-higgsfield generate create soul_cinematic --prompt "..." --soul-id <ref_id> --quality 2k --wait
+higgsfield generate create text2image_soul_v2 --prompt "..." --soul-id [ref_id] --quality 2k --wait
+higgsfield generate create soul_cinematic --prompt "..." --soul-id [ref_id] --quality 2k --wait
 ```
 
 ## Listing existing Souls
 
 ```bash
 higgsfield soul-id list                   # all references
-higgsfield soul-id get <id>               # one by id
+higgsfield soul-id get [id]               # one by id
 ```
 
 ## Errors
